@@ -1,4 +1,9 @@
 print('******The Wild Ones******')
 
-leads = {"1" : "Johnny", "2" : "Chino", "3" : "Kathie"}
-print(leads)
+# Make a dict() for every character
+leads = {"biker" : "Johnny", "rival" : "Chino", "lady" : "Kathie"}
+
+for l, k in leads.items():
+    print(l, k)
+    
+print("Who are the leading cast?")
