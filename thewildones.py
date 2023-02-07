@@ -9,7 +9,16 @@ class Person:
 leader = Person("Johnny", "biker")
 enemy = Person("Chino", "rival")
 watress = Person("Kathie", "lady")
+
+cast = dict()
+cast = [leader.name, enemy.name, watress.name]
 print('******The Wild Ones******')
+
+leader.getName()
+
+for value in cast:
+    print(cast)
+
 
 
 
@@ -19,4 +28,5 @@ leads = {"biker" : "Johnny", "rival" : "Chino", "lady" : "Kathie"}
 for l, k in leads.items():
     print(l, ':', k)
     
-
+if (leads.items() != "biker"):
+    print("Johnny")
