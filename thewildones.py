@@ -16,17 +16,8 @@ print('******The Wild Ones******')
 
 leader.getName()
 
-for value in cast:
-    print(cast)
-
-
-
-
 # Make a dict() for every character
 leads = {"biker" : "Johnny", "rival" : "Chino", "lady" : "Kathie"}
 
 for l, k in leads.items():
-    print(l, ':', k)
-    
-if (leads.items() != "biker"):
-    print("Johnny")
+    print(l, ':', k)    
