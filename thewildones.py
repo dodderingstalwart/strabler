@@ -21,3 +21,5 @@ leads = {"biker" : "Johnny", "rival" : "Chino", "lady" : "Kathie"}
 
 for l, k in leads.items():
     print(l, ':', k)    
+
+
