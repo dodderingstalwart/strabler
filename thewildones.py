@@ -6,6 +6,7 @@ class Person:
     def getName(self):
       print(self.name)
 
+# main characters
 leader = Person("Johnny", "biker")
 enemy = Person("Chino", "rival")
 watress = Person("Kathie", "lady")
