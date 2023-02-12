@@ -12,6 +12,7 @@ def main():
 
     mainTitle()
     rival = Person('Chino', 'biker')
+    watress = Person('Kathie', 'watress')
 
     # Make a dict() for every character
     leads = {"biker" : "Johnny", "rival" : "Chino", "lady" : "Kathie"}
