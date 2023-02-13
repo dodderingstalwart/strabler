@@ -7,6 +7,8 @@ class Person():
 
 def mainTitle():
     print('************The Wild Ones************')
+    title = 'The Wild Ones'
+    print(title.center(20, *))
 
 def main():
 
