@@ -20,7 +20,9 @@ def main():
     leads = {"biker" : "Johnny", "rival" : "Chino", "lady" : "Kathie"}
 
     for l, k in leads.items():
-        print('\t', l.center(20).rstrip(), ':', k)
+        print('\t', l.center(30).rstrip(), ':', k)
+
+    print("\nSelect character to get their information: ")
 
 
 if __name__ == '__main__':
