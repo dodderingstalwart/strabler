@@ -6,13 +6,13 @@ class Person():
         self.job = job
 
 def mainTitle():
-    print('************The Wild Ones************')
     title = 'The Wild Ones'
-    print(title.center(20, *))
+    print(''.rjust(20, '*'), title, ''.ljust(20, '*'))
 
 def main():
 
     mainTitle()
+    leader = Person('Johnny', 'biker')
     rival = Person('Chino', 'biker')
     watress = Person('Kathie', 'watress')
 
@@ -20,7 +20,7 @@ def main():
     leads = {"biker" : "Johnny", "rival" : "Chino", "lady" : "Kathie"}
 
     for l, k in leads.items():
-        print('\t', l, ':', k)
+        print('\t', l.center(20).rstrip(), ':', k)
 
 
 if __name__ == '__main__':
