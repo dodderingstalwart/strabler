@@ -8,6 +8,7 @@ class Person():
 def mainTitle():
     title = 'The Wild Ones'
     print(''.rjust(20, '*'), title, ''.ljust(20, '*'))
+    print(''.rjust(55, '*'))
 
 def main():
 
