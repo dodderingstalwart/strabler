@@ -13,7 +13,7 @@ def main():
     webSite = input('Enter website: ')
     x = re.split("\?", webSite)
     k = x[0]
-    del x
+    del webSite
     print('')
     print(k)
 
