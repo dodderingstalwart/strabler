@@ -1,24 +1,21 @@
 #! /usr/bin/env python
+# thewildone removes affiliate links
 
-class Person():
-    def __init__(self, name, job):
-        self.name = name
-        self.job = job
+import webbrowser
+import re
 
-def mainTitle():
-    print('************The Wild Ones************')
+def title():
+    print("The Wild Ones".center(50, '*'))
+    print(''.center(50 ,'*'))
 
 def main():
-
-    mainTitle()
-    rival = Person('Chino', 'biker')
-
-    # Make a dict() for every character
-    leads = {"biker" : "Johnny", "rival" : "Chino", "lady" : "Kathie"}
-
-    for l, k in leads.items():
-        print('\t', l, ':', k)
-
+    title()
+    webSite = input('Enter website: ')
+    x = re.split("\?", webSite)
+    k = x[0]
+    del x
+    print('')
+    print(k)
 
 if __name__ == '__main__':
     main()
