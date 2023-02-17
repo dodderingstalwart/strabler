@@ -4,12 +4,12 @@
 import webbrowser
 import re
 #import pyperclip
-import sys
+#import sys
 
 # Main Title of program
-def title():
-    print("The Wild Ones".center(50, '*'))
-    print(''.center(50 ,'*'))
+#def title():
+    #print("The Wild Ones".center(50, '*'))
+    #print(''.center(50 ,'*'))
 
 # Retriving an affiliate link website address
 #def getWebsite():
@@ -17,18 +17,27 @@ def title():
     #return webSite
 
 def main():
-    if (len(sys.argv)) < 1:
-        print('Enter a valid website address')
-    web_site1 = sys.argv[1]
-    title()
+    web_site1 = []
+    #if (len(sys.argv)) < 1:
+        #print('Enter a valid website address')
+    #web_site1 = sys.argv[1]
+    web_name = ''
+    #title()
     #web_site2 = getWebsite()
-    x = re.split("\?", web_site1)
-    k = x[0]
-    del web_site1
+    #web_site1 = input('Enter Website Address: ')
+    while web_name != 'quit':
+        web_name = input('Enter a website address: ') 
+        if web_name != 'quit':
+            web_site1.append(web_name)
+
+    for x in web_site1:
+        k = re.split("\?", x)
+        print('Output Address: ',k[0])
+    #del web_site1
     #pyperclip.pbcopy(k)
-    print('')
-    print(k)
-    exit()
+    #print('')
+    #print('Output Address:', k)
+    #exit()
 
 if __name__ == '__main__':
     main()
