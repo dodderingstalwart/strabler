@@ -17,8 +17,8 @@ def getWebsite():
 
 def main():
     title()
-    webSite = getWebsite()
-    x = re.split("\?", webSite)
+    web_site = getWebsite()
+    x = re.split("\?", web_site)
     k = x[0]
     del webSite
     #pyperclip.pbcopy(k)
