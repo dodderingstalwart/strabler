@@ -23,10 +23,8 @@ def main():
     #web_site1 = sys.argv[1]
     web_name = ''
     #title()
-    #web_site2 = getWebsite()
-    #web_site1 = input('Enter Website Address: ')
     while web_name != 'quit':
-        web_name = input('Enter a website address: ') 
+        web_name = input('Enter website address: ') 
         if web_name != 'quit':
             web_site1.append(web_name)
 
