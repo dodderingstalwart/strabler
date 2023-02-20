@@ -30,7 +30,7 @@ def main():
 
     for x in web_site1:
         k = re.split("\?", x)
-        print('Output Address: ',k[0])
+        print('*','Output Address: ',k[0])
 
 # call for main 
 if __name__ == '__main__':
