@@ -25,8 +25,8 @@ def main():
             continue
 
         print('**', ' ', k[0])
-        
-    print('*', ' ', webg)
+    
+    print('*', ' ', set(webg))
 
 # call for main 
 if __name__ == '__main__':
