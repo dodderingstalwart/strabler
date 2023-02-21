@@ -9,9 +9,9 @@ def main():
     web_site1 = []
     web_name = ''
     
-    while web_name != 'quit':
-        web_name = input('Enter website address: ') 
-        if web_name != 'quit':
+    while web_name != 'q':
+        web_name = input('Enter website address or q to quit: ') 
+        if web_name != 'q':
             web_site1.append(web_name)
     # remove '?' and everything to the right
     for x in web_site1:
