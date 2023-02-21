@@ -25,7 +25,7 @@ def main():
 
         print('**', ' ', k[0])
         
-    print('*', ' ', web_name)
+    #print('*', ' ', web_name)
 
 # call for main 
 if __name__ == '__main__':
