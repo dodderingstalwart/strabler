@@ -6,6 +6,7 @@ import re
 
 def main():
     web_site1 = []
+    #webg = []
     web_name = ''
     
     while web_name != 'q':
@@ -13,15 +14,18 @@ def main():
         if (web_name != 'q'):
             web_site1.append(web_name)
         
-        a = re.search("^http*", web_name)
+        a = re.search("^http(s?)*", web_name)
         # remove '?' and everything to the right
         if a:
             for x in web_site1:
                 k = re.split("\?", x)
-                print('*','Output Address: ',k[0])
         else:
-            print("Enter address starting with http")
+            web_site1.pop()
             continue
+
+        print('**', ' ', k[0])
+        
+    print('*', ' ', web_name)
 
 # call for main 
 if __name__ == '__main__':
