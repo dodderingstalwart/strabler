@@ -6,7 +6,7 @@ import re
 
 def main():
     web_site1 = []
-    #webg = []
+    webg = []
     web_name = ''
     
     while web_name != 'q':
@@ -19,13 +19,14 @@ def main():
         if a:
             for x in web_site1:
                 k = re.split("\?", x)
+                webg.append(k[0])
         else:
             web_site1.pop()
             continue
 
         print('**', ' ', k[0])
         
-    #print('*', ' ', web_name)
+    print('*', ' ', webg)
 
 # call for main 
 if __name__ == '__main__':
