@@ -10,7 +10,7 @@ def main():
     web_name = ''
     
     while web_name != 'q':
-        web_name = input('Enter website address or q to quit: ') 
+        web_name = input('Enter website address or (q): ') 
         if (web_name != 'q'):
             web_site1.append(web_name)
         
