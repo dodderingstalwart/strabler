@@ -14,7 +14,7 @@ def main():
         if (web_name != 'q'):
             web_site1.append(web_name)
         
-        a = re.search("^http(s?)*", web_name)
+        a = re.search("^http(s?):*", web_name)
         # remove '?' and everything to the right
         if a:
             for x in web_site1:
@@ -26,7 +26,7 @@ def main():
 
         print('**', ' ', k[0])
     
-    print('*', ' ', set(webg))
+    print('*', ''.join(set(webg)))
 
 # call for main 
 if __name__ == '__main__':
