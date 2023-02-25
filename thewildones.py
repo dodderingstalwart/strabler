@@ -11,7 +11,7 @@ def main():
 
    # User enters affiliate link 
     while web_name != 'q':
-        web_name = input('Enter website address or (q): ') 
+        web_name = input('Enter website or (q): ') 
         if (web_name != 'q'):
             web_site1.append(web_name)
         
