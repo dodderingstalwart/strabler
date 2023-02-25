@@ -5,7 +5,7 @@ import webbrowser
 import re
 
 def main():
-    web_site1 = []
+    web_store = []
     webg = []
     web_name = ''
 
@@ -13,16 +13,16 @@ def main():
     while web_name != 'q':
         web_name = input('Enter website or (q): ') 
         if (web_name != 'q'):
-            web_site1.append(web_name)
+            web_store.append(web_name)
         
         a = re.search("^http(s?):*", web_name)
         # remove '?' and everything to the right
         if a:
-            for x in web_site1:
+            for x in web_store:
                 k = re.split("\?", x)
                 webg.append(k[0])
         else:
-            web_site1.pop()
+            web_store.pop()
             continue
 
         print('**', ' ', k[0])
