@@ -15,9 +15,9 @@ def main():
         if (web_name != 'q'):
             web_store.append(web_name)
         
-        a = re.search("^http(s?):*", web_name)
-        # remove '?' and everything to the right
-        if a:
+        # search and remove affilate link
+        clean_link = re.search("^http(s?):*", web_name)
+        if clean_link:
             for x in web_store:
                 k = re.split("\?", x)
                 webg.append(k[0])
