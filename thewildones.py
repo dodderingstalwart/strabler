@@ -25,11 +25,11 @@ def main():
             web_store.pop()
             continue
 
-        print('**', ' ', k[0])
+        print('*', ' ', k[0])
     
     # Output clean website
     print()
-    print('*', '\n* '.join(set(webg)))
+    print('**', '\n* '.join(set(webg)))
 
 # call for main 
 if __name__ == '__main__':
