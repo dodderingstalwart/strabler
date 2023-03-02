@@ -6,7 +6,7 @@ import re
 
 def main():
     web_store = []
-    webg = []
+    web_fixed = []
     web_name = ''
 
    # User enters affiliate link 
@@ -20,7 +20,7 @@ def main():
         if clean_link:
             for x in web_store:
                 k = re.split("\?", x)
-                webg.append(k[0])
+                web_fixed.append(k[0])
         else:
             web_store.pop()
             continue
@@ -29,7 +29,7 @@ def main():
     
     # Output clean website
     print()
-    print('**', '\n* '.join(set(webg)))
+    print('**', '\n* '.join(set(web_fixed)))
 
 # call for main 
 if __name__ == '__main__':
