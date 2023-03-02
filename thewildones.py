@@ -25,7 +25,7 @@ def main():
             web_store.pop()
             continue
 
-        print('*', ' ', k[0])
+        print('***', ' ', k[0])
     
     # Output clean website
     print()
