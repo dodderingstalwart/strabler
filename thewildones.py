@@ -3,6 +3,7 @@
 
 import webbrowser
 import re
+import sys
 
 def main():
     web_store = []
@@ -26,7 +27,7 @@ def main():
                     web_store.pop()
                     continue
                 else:
-                    exit()
+                    sys.ext("No website entered")
 
             print('***', ' ', k[0])
     
