@@ -33,7 +33,7 @@ def main():
     
     # Output clean website
     print()
-    print('\n* '.join(set(web_fixed)))
+    print('\n** '.join(set(web_fixed)))
 
 # call for main 
 if __name__ == '__main__':
