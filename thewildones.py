@@ -5,6 +5,7 @@ import webbrowser
 import re
 import sys
 
+# need to ignore youtube videos 
 def main():
     web_store = []
     web_fixed = []
@@ -22,6 +23,7 @@ def main():
                 for x in web_store:
                     k = re.split("\?", x)
                     web_fixed.append(k[0])
+            # pop the last 'q' off the stack
             else:
                 if web_store:
                     web_store.pop()
