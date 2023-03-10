@@ -5,7 +5,6 @@ import webbrowser
 import re
 import sys
 
-# need to ignore youtube videos 
 def main():
     web_store = []
     web_fixed = []
@@ -18,6 +17,7 @@ def main():
             web_store.append(web_name)
         
             # search and remove affilate link
+            # Does not work with youtube link
             clean_link = re.search("^http(s?):*", web_name)
             if clean_link:
                 for x in web_store:
