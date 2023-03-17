@@ -12,7 +12,7 @@ def main():
 
    # User enters affiliate link 
     while web_name != 'q':
-        web_name = input('Enter website or (q): ') 
+        web_name = input('Enter website or non YouTube link or (q): ') 
         if (web_name != 'q'):
             web_store.append(web_name)
         
