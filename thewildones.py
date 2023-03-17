@@ -1,5 +1,5 @@
 #! /usr/bin/env python
-# thewildone.py removes affiliate links
+# thewildone.py removes affiliate links and only affiliate links
 
 import webbrowser
 import re
@@ -12,7 +12,7 @@ def main():
 
    # User enters affiliate link 
     while web_name != 'q':
-        web_name = input('Enter website or (q): ') 
+        web_name = input('Enter website or non YouTube link or (q): ') 
         if (web_name != 'q'):
             web_store.append(web_name)
         
