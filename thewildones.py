@@ -1,7 +1,7 @@
 #! /usr/bin/env python
 # thewildone.py removes affiliate links and only affiliate links
 
-import webbrowser
+# import webbrowser
 import re
 import sys
 
