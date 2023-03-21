@@ -29,6 +29,7 @@ def main():
                 if web_store:
                     web_store.pop()
                     continue
+                # never hits this
                 else:
                     sys.ext("No website entered")
 
