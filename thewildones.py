@@ -18,7 +18,7 @@ def main():
             web_store.append(web_name)
         
             # search and remove affilate link
-            # Does not work with youtube link
+            # Does not work with youtube link need to add 'ref' case
             clean_link = re.search("^http(s?):*", web_name)
             if clean_link:
                 for x in web_store:
