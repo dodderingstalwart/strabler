@@ -10,7 +10,7 @@ def main():
     web_fixed = []
     web_name = ''
 
-   # User enters affiliate link 
+   # Enter affiliate link 
     while web_name != 'q':
         web_name = input('Enter website or non YouTube link or (q): ') 
         # need to check for 'ref' in link
