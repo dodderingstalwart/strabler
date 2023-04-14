@@ -1,7 +1,6 @@
 #! /usr/bin/env python
 # thewildone.py removes affiliate links and only affiliate links
 
-# import webbrowser
 import re
 import sys
 
@@ -10,14 +9,15 @@ def main():
     web_fixed = []
     web_name = ''
 
-   # User enters affiliate link 
+   # Enter affiliate link 
     while web_name != 'q':
         web_name = input('Enter website or non YouTube link or (q): ') 
+        # check for 'ref' in link
         if (web_name != 'q'):
             web_store.append(web_name)
         
             # search and remove affilate link
-            # Does not work with youtube link
+            # Does not work with youtube link need to add 'ref' case
             clean_link = re.search("^http(s?):*", web_name)
             if clean_link:
                 for x in web_store:
@@ -28,6 +28,7 @@ def main():
                 if web_store:
                     web_store.pop()
                     continue
+                # never hits this
                 else:
                     sys.ext("No website entered")
 
