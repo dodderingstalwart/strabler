@@ -3,6 +3,10 @@
 
 import re
 import sys
+from flask import Flask
+app = Flask(__name__)
+
+@app.route('/')
 
 def main():
     web_store = []
