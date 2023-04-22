@@ -1,5 +1,5 @@
 #! /usr/bin/env python
-# thewildone.py removes affiliate links and only affiliate links
+# thewildone.py removes affiliate links
 
 import re
 import sys
