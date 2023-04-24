@@ -38,7 +38,7 @@ def main():
 
             print('***', ' ', k[0])
     
-    # Output clean website
+    # Output website without link
     print()
     print('\n** '.join(set(web_fixed)))
 
