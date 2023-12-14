@@ -1,3 +1,3 @@
 # strabler
-Python 3.11 or later\n
+Python 3.11 or later
 Edit a ref out of a link
