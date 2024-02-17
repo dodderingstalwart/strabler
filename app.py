@@ -14,6 +14,7 @@ def main():
     web_name = ''
 
    # Enter affiliate link 
+    # replace nested loops to speed up
     while web_name != 'q':
         web_name = input('Enter website or non YouTube link or (q): ') 
         # check for 'ref' in link
