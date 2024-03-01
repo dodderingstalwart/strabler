@@ -130,3 +130,6 @@ dmypy.json
 
 absalom.txt
 *.cpy
+
+/bin
+pyvenv.cfg
