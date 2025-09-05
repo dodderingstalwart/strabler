@@ -8,6 +8,8 @@ from flask import Flask
 app = Flask(__name__)
 
 @app.route('/')
+def remove_affiliate_links(url):
+    return url
 
 def main():
     web_store = []
