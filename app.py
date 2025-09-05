@@ -4,6 +4,7 @@
 import re
 import sys
 from flask import Flask
+
 app = Flask(__name__)
 
 @app.route('/')
@@ -45,4 +46,8 @@ def main():
 
 # call for main 
 if __name__ == '__main__':
-    main()
+    # Check if running as web app or command line
+    if len(sys.argv) > 1 and sys.argv[1] == 'web':
+        app.run(debug=True)
+    else:
+        main()
