@@ -56,6 +56,10 @@ def main():
         if (web_name != 'q'):
             web_store.append(web_name)
         
+        if not re.match(r'^https://', web_name):
+            print("Please enter a url with 'http://' or 'https://'")
+            continue
+        
             # search and remove affilate link
             # Does not work with youtube link need to add 'ref' case
             clean_link = re.search("^http(s?):*", web_name)
