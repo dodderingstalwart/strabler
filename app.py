@@ -9,10 +9,32 @@ app = Flask(__name__)
 
 @app.route('/')
 def remove_affiliate_links(url):
+    # List of common affiliate parameters to remove
     affiliate_params = [
         'ref', 'tag', 'aff', 'affiliate', 'utm_source', 'utm_medium', 'utm_campaign',
         'utm_term', 'utm_content', 'fbclid', 'gclid', 'mc_cid', 'mc_eid'
     ]
+
+    # Split the URL into base and query parts
+    if '?' in url:
+        base_url, query_params = url.split('?', 1)
+
+        # parse the query parameters
+        params = query_params.split('&')
+        filtered_params = []
+
+        for param in params:
+            if '=' in param:
+                key, value = param.split('=')[0].lower()
+                # Only keep parameters that are not in the affiliate list
+                if not any(aff_param in key for aff_param in affiliate_params):
+                    filtered_params.append(param)
+        
+        # Reconstruct the URL without affiliate parameters
+        if filtered_params:
+            return base_url + '?' + '&'.join(filtered_params)
+        else:
+            return base_url
     return url
 
 def main():
