@@ -9,6 +9,10 @@ app = Flask(__name__)
 
 @app.route('/')
 def remove_affiliate_links(url):
+    affiliate_params = [
+        'ref', 'tag', 'aff', 'affiliate', 'utm_source', 'utm_medium', 'utm_campaign',
+        'utm_term', 'utm_content', 'fbclid', 'gclid', 'mc_cid', 'mc_eid'
+    ]
     return url
 
 def main():
