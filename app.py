@@ -42,6 +42,8 @@ def main():
     web_fixed = []
     web_name = ''
 
+    print("Strabler Application to remove affiliate links\n")
+    print("*" * 40)
    # Enter affiliate link 
     # replace nested loops to speed up
     while web_name != 'q':
