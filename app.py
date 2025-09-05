@@ -46,9 +46,13 @@ def main():
     print("*" * 40)
    # Enter affiliate link 
     # replace nested loops to speed up
-    while web_name != 'q':
+    while True:
         web_name = input('Enter website or non YouTube link or (q): ') 
-        # check for 'ref' in link
+        # check if user wants to quit
+        if web_name.lower() == 'q':
+            break
+
+         # only add non 'q' entries to list
         if (web_name != 'q'):
             web_store.append(web_name)
         
@@ -73,6 +77,10 @@ def main():
     # Output website without link
     print()
     print('\n** '.join(set(web_fixed)))
+
+@app.route('/')
+def web_interface():
+    return "Strabler, a command line interface tool to remove affiliate links."
 
 # call for main 
 if __name__ == '__main__':
