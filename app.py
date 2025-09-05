@@ -35,7 +35,7 @@ def main():
                     continue
                 # never hits this
                 else:
-                    sys.ext("No website entered")
+                    sys.exit("No website entered")
 
             print('***', ' ', k[0])
     
