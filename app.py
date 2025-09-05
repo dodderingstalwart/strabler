@@ -7,7 +7,6 @@ from flask import Flask
 
 app = Flask(__name__)
 
-@app.route('/')
 def remove_affiliate_links(url):
     # List of common affiliate parameters to remove from (claude ai)
     affiliate_params = [
