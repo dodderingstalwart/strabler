@@ -56,31 +56,18 @@ def main():
         if (web_name != 'q'):
             web_store.append(web_name)
         
+        # check if url starts with http or https
         if not re.match(r'^https://', web_name):
             print("Please enter a url with 'http://' or 'https://'")
             continue
         
-            # search and remove affilate link
-            # Does not work with youtube link need to add 'ref' case
-            clean_link = re.search("^http(s?):*", web_name)
-            if clean_link:
-                for x in web_store:
-                    k = re.split("\?", x)
-                    web_fixed.append(k[0])
-            # pop the last 'q' off the stack
-            else:
-                if web_store:
-                    web_store.pop()
-                    continue
-                # never hits this
-                else:
-                    sys.exit("No website entered")
+        web_store.append(web_name)
+        affiliate_less_url = remove_affiliate_links(web_name)
+        web_fixed.append(affiliate_less_url)
 
-            print('***', ' ', k[0])
-    
-    # Output website without link
-    print()
-    print('\n** '.join(set(web_fixed)))
+        print(f"Url without the affiliate link: {affiliate_less_url}\n")
+        print("*" * 40)
+        print(f"Output original website: {web_name}\n")
 
 @app.route('/')
 def web_interface():
